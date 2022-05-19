@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Anistitches website</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div id="div-logo">
+          <a href="#" class="logo"><span>Ani</span>stitches</a>
+        </div>
+        <img
+          class="mobile-menu"
+          id="mobile-cta"
+          src="./assets/images/burger.svg"
+          alt="open navigation"
+        />
+        <nav >
+          <img
+          class="btn"
+          id="close-btn"
+          src="./assets/images/burger.svg"
+          alt="open navigation"
+        />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <ul class="secondary-class">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+          </ul>
+        </nav>
+      
+      </div>
+    </header>
+    <!-- Header -->
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Knitty &amp; Gritty!</p>
+          <h1>A very cute stitch patterns</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for free</a>
+            <a href="#" class="watch-video-cta">
+              <img src="./assets/images/camera.svg" alt="camera" />
+              Watch video</a
+            >
+          </div>
+        </div>
+        <img
+          id="hero-img"
+          src="./assets/images/hero_image.svg"
+          alt="Main Image"
+        />
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <ul class="features-list">
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Confetti Explosions</li>
+          <li>Social Media Anouncements</li>
+          <li>Real Time Collaboration</li>
+          <li>Other Awesome Features</li>
+        </ul>
+
+        <img src="./assets/images/phone_in_hand.jpg" alt="Holding Phone" />
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="./assets/images/avatar.png" alt="avatar" />
+            <blockquote>
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              nisi, et, dolorem, aut amet optio in hic odio est consectetur
+              animi. Ullam quasi iure odit quos vel ratione repellat corporis!'
+            </blockquote>
+            <cite>- John Doe</cite>
+          </li>
+          <!-- li -->
+          <li>
+            <img src="./assets/images/avatar.png" alt="avatar" />
+            <blockquote>
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              nisi, et, dolorem, aut amet optio in hic odio est consectetur
+              animi. Ullam quasi iure odit quos vel ratione repellat corporis!'
+            </blockquote>
+            <cite>- John Doe</cite>
+          </li>
+          <!-- li -->
+          <li>
+            <img src="./assets/images/avatar.png" alt="avatar" />
+            <blockquote>
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              nisi, et, dolorem, aut amet optio in hic odio est consectetur
+              animi. Ullam quasi iure odit quos vel ratione repellat corporis!'
+            </blockquote>
+            <cite>- John Doe</cite>
+          </li>
+          <!-- li -->
+        </ul>
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="contacts-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+          <form action="">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="21"
+              rows="6"
+              placeholder="Type your message"
+            ></textarea>
+
+            <input type="submit" class="send-message-cta" value="Send message">
+              
+            </input>
+          </form>
+        </div>
+        <!-- /.contact-left -->
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30163.02904670763!2d37.3646599718928!3d55.812674147258136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54646e0e01be1%3A0x7334e95745c6a6fe!2z0KHQvdC10LYu0LrQvtC8!5e0!3m2!1sru!2sru!4v1652027729643!5m2!1sru!2sru"
+            width="300"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- /.contact-right -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.contacts-section -->
+
+    <script>
+
+      const mobileBtn  = document.getElementById('mobile-cta');
+      const navElement = document.querySelector('nav');
+      const closeBtn = document.getElementById('close-btn')
+      mobileBtn.addEventListener('click', ()=> {
+        navElement.classList.add('menu-btn');
+        
+      })
+      closeBtn.addEventListener('click', ()=> {
+        navElement.classList.remove('menu-btn');
+        
+      })
+    </script>
+  </body>
+</html>
